@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TraTuFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/revTraTu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             />
+
+        <LinearLayout
+            android:id="@+id/lnChiTietTu"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tvTuTra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="abandon"
+                    android:textColor="@color/black"
+                    android:textSize="25dp" />
+                <ImageView
+                    android:id="@+id/imgClose"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_baseline_close_24"
+                    app:tint="@color/black" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvPhienAm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#7A7683"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvLoaiTu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ngoại động từ"
+                android:textColor="@color/purple_200"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tvNghia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Từ bỏ, bỏ rơi, ruồng bỏ"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tvVD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* abandon a wish"
+                android:textColor="#E91E63"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tvNghiaVD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="* từ bỏ một ước mơ"
+                android:textColor="@color/cl_app"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>
